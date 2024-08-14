@@ -12,11 +12,11 @@ const {setUser}=useContext(UserContext);
     setUser({userName,password})
  }
   return (
-    <div>
+    <div style={{border:"2px solid black", display:"flex", flexDirection:"column", alignItems:"center",gap:10 }}>
         <h2>login</h2>
         <input type='text' placeholder='username' value={userName} onChange={(e) => setuserName(e.target.value)}/>
         <input type='number' placeholder='password'value={password} onChange={(e) => setpassword(e.target.value)}/>
-        <button onClick={handleSubmit}>Submit</button>
+        <button onClick={handleSubmit} style={{border:"2px solid red", color:'gold', backgroundColor:"black"}}>Submit</button>
     </div>
   )
 }
